@@ -1,0 +1,296 @@
+body{margin:0px; padding:0px; background:#DDDDDD;font-family:Verdana;}
+
+#contentWrap{width:100%; margin:0px; padding:0px; float:left; background:#DDDDDD repeat-x}
+#contentPanel {width:1240px; margin:0 auto; padding:33px 0 0 0}
+#leftPanel{width:259px; margin:0px; padding:0 0 34px 0; float:left; border-right:#c6d09d dashed 1px}
+#leftPanel .toplinks{width:259px; margin:0px; padding:0px; float:left}
+#leftPanel .toplinks h2{width:224px; margin:0px; padding:0px; float:left; font-family:Verdana; font-size:20px; color:#000000; line-height:24px; font-weight:normal}
+#leftPanel .toplinks h3{width:224px; margin:5px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#005b7f; line-height:16px; font-weight:bold}
+#leftPanel .toplinks p{width:224px; margin:10px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#252525; line-height:16px}
+#header-search {
+	bottom: 0;
+	right: 0;
+	width: 252px;
+	height: 34px;
+	padding: 8px 0 25px 0px;
+	
+}
+
+input.search {
+	background:#FFFFFF url(images/search.png) no-repeat 4px 4px;
+	padding:4px 4px 4px 22px;
+	border:1px solid #CCCCCC;
+	width: 135px;
+	height: 16px;
+	margin-right: 6px;
+	color:#5F5F5F;
+}
+
+
+#support-bar{
+	float:right;
+	width:200px;
+	text-align:center;
+	background:white;
+	font-size:20px;
+	border:1px solid #DDDDDD;	
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 20px 20px; 
+	 margin-top:0px; 
+	padding:0px 8px;
+	height:35px;	
+	margin-right:25px;
+}
+#support-bar img{
+	margin-bottom:-7px;
+	cursor:pointer;
+}
+
+
+#leftPanel .toplinks ul
+{
+	width:250px; 
+	margin:8px 0 0 0; 
+	padding:0px; 
+	float:left; 
+	display:block;
+	font-size:15px;
+	list-style-image:url('images/logo.png');
+}
+#leftPanel .toplinks ul li{width:250px; margin:0px; padding:0px; float:left; display:block}
+
+#leftPanel .toplinks ul li a
+{
+	cursor:pointer;
+	width:225px; 
+	height:35px; 
+	margin:0px; 
+	padding:15px 10px 0 19px; 
+	float:left; 
+	font-family:Arial; 
+	font-size:18px; 
+	color:#363636; 
+	line-height:16px; 
+	text-decoration:none; 
+	border-bottom:#c6d09d solid 1px; 
+
+}
+
+#leftPanel img {
+margin: 0 5px 0 0;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+
+#leftPanel img:hover {
+opacity:0.7;
+}
+
+#leftPanel .toplinks ul li a:hover{color:#c46706; background:#DDDDDD no-repeat}
+#leftPanel .toplinks ul li a.bottom{width:205px; height:19px; margin:0px; padding:0 0 0 19px; float:left; font-family:Arial; font-size:12px; color:#363636; line-height:16px; text-decoration:none; border-bottom:0px; }
+#leftPanel .toplinks ul li a.bottom:hover{color:#c46706; background:#DDDDDD  no-repeat}
+#loginPanel{width:224px; margin:31px 0 0 0; padding:0px; float:left; font-family:Verdana;}
+#loginPanel h2{width:224px; margin:0px; padding:0px; float:left; font-family:Verdana; font-size:20px; color:#000000; line-height:24px; font-weight:normal}
+#loginPanel h3{width:224px; margin:5px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#005b7f; line-height:16px; font-weight:bold}
+#loginPanel input{width:98px; height:17px; margin:11px 0 0 0; padding:2px 0 0 5px; float:left; font-family:Arial; font-size:10px; color:#363636; border:0px; background:#f3efc0}
+#loginPanel .blank{width:11px; height:10px; margin:0px; padding:0px; float:left}
+#loginPanel p{width:218px; margin:9px 0 0 0; padding:0 0 0 6px; float:left; font-family:Arial; font-size:11px; color:#252525; font-weight:bold}
+#loginPanel p a{color:#d25930; text-decoration:none}
+#loginPanel .login{width:55px; height:16px; margin:5px 0 0 0; margin-left:5px; padding:0px; float:left; font-family:Arial; font-size:10px; color:#000000; line-height:14px; text-align:center; text-decoration:none; border:#bdbcbd solid 1px; background:#FFFFFF}
+#loginPanel .login:hover{background:#CCCCCC}
+
+#projectsPanel
+{
+	width:230px; 
+	margin:40px 0 0 0; 
+	padding:0px; 
+	float:left;
+}
+
+#projectsPanel h2{width:224px; margin:0px; padding:0px; float:left; font-family:Verdana; font-size:20px; color:#000000; line-height:24px; font-weight:normal}
+#projectsPanel h3{width:224px; margin:5px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:11px; color:#005b7f; line-height:16px; font-weight:bold}
+#projectsPanel .pic1{width:105px; height:83px; margin:10px 0 0 0; padding:0px; float:left; background:url(images/pic1.jpg) no-repeat}
+#projectsPanel .pic2{width:105px; height:83px; margin:10px 0 0 0; padding:0px; float:left; background:url(images/pic2.jpg) no-repeat}
+#projectsPanel .blank{width:20px; height:10px; margin:10px 0 0 0; padding:0px; float:left}
+#projectsPanel a{width:55px; height:16px; margin:7px 0 0 0; margin-left:5px; padding:0px; float:right; font-family:Arial; font-size:10px; color:#000000; line-height:14px; text-align:center; text-decoration:none; border:#bdbcbd solid 1px; background:#FFFFFF} 
+#projectsPanel a:hover{background:#CCCCCC}
+#middlePanel{width:688px; margin:0px; padding:0 0 38px 32px; float:left; border-right:#c6d09d dashed 1px}
+#middlePanel .top{width:650px; margin:0px; padding:0 0 0 3px; float:left}
+#middlePanel .top h2{width:650px; margin:0px; padding:0px; float:left; font-family:Verdana; font-size:28px; color:#000000; line-height:32px; font-weight:normal}
+#middlePanel .top h3{width:650px; margin:9px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#005b7f; line-height:16px; font-weight:bold}
+#middlePanel .top p{width:650px; margin:16px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#363636; line-height:16px}
+#middlePanel .top p span{color:#c46706; font-weight:bold}
+#middlePanel .top a{width:75px; height:16px; margin:10px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:10px; color:#000000; line-height:14px; text-align:center; text-decoration:none; border:#bdbcbd solid 1px; background:#FFFFFF} 
+#middlePanel .top a:hover{background:#CCCCCC}
+#middlePanel .bottom{width:668px; margin:32px 0 0 0; padding:0px; float:left; font-family:Verdana; font-size:15px;}
+/*
+#middlePanel .bottom h2{width:350px; margin:0px; padding:0 0 0 3px; float:left; font-family:Verdana; font-size:25px; color:#000000; line-height:29px; font-weight:normal}
+#middlePanel .bottom h3{width:350px; margin:12px 0 0 0; padding:0 0 0 3px; float:left; font-family:Arial; font-size:12px; color:#005b7f; line-height:16px; font-weight:bold}
+#middlePanel .bottom .pic3{width:358px; height:109px; margin:19px 0 0 0; padding:0px; float:left; background:url(images/pic3.jpg) no-repeat}
+#middlePanel .bottom ul{width:349px; margin:16px 0 0 0; padding:0px; float:left; display:block}
+#middlePanel .bottom ul li{width:349px; margin:0px; padding:0px; float:left; display:block}
+#middlePanel .bottom ul li a{width:334px; height:24px; margin:0px; padding:0 0 0 15px; float:left; font-family:Arial; font-size:12px; color:#1e2316; line-height:20px; text-decoration:none; border-bottom:#8bb5a2 dashed 1px; background:url(images/liststyle.jpg) no-repeat}
+*/
+#middlePanel .bottom ul li a:hover
+{
+	cursor:pointer;
+	color:#c46706; 
+
+}
+
+#middlePanel .bottom ul li a.bottom{width:334px; height:24px; margin:0px; padding:0 0 0 15px; float:left; font-family:Arial; font-size:12px; color:#1e2316; line-height:20px; text-decoration:none; border-bottom:0px; }
+#middlePanel .bottom ul li a.bottom:hover{color:#c46706; }
+#rigtPanel{width:218px; margin:0px; padding:0 0 0 35px; float:left}
+#rigtPanel .services{width:218px; margin:0px; padding:0px; float:left}
+#rigtPanel .services h2{width:218px; margin:0px; padding:0px; float:left; font-family:Verdana; font-size:20px; color:#000000; line-height:24px; font-weight:normal}
+#rigtPanel .services ul{width:218px; margin:23px 0 0 0; padding:0px; float:left; display:block}
+#rigtPanel .services ul li{width:218px; margin:0px; padding:0 0 23px 0; float:left; display:block}
+#rigtPanel .services ul li .cal{width:45px; height:44px; margin:0px; padding:15px 0 0 0; float:left; font-family:Arial; font-size:20px; color:#3bb000; line-height:24px; text-align:center; background:url(images/calendar.jpg) no-repeat}
+#rigtPanel .services ul li .cal span{width:45px; float:left; padding:0px; font-family:Arial; font-size:11px; color:#FFFFFF; text-align:center; font-weight:bold; margin:0px}
+#rigtPanel .services ul li h2{width:164px; margin:0px; padding:0 0 0 7px; float:left; font-family:Arial; font-size:12px; color:#4f790a; line-height:16px; font-weight:bold}
+#rigtPanel .services ul li p{width:165px; margin:5px 0 0 0; padding:0 0 0 7px; float:left; font-family:Arial; font-size:12px; color:#252525; line-height:16px; text-indent:20px; background:url(images/star.jpg) no-repeat 7px 0}
+#rigtPanel .services ul li a{width:218px; margin:14px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:11px; font-weight:bold; color:#c46706; line-height:15px}
+#rigtPanel .services ul li a:hover{text-decoration:none}
+#rigtPanel .services ul li .author{width:186px; height:21px; margin:14px 0 0 0; padding:0 0 0 32px; float:left; font-family:Arial; font-size:11px; color:#343434; line-height:20px; background:#fefde7 url(images/author.jpg) no-repeat 10px 0}
+#rigtPanel .services ul li .author span{font-weight:bold}
+#rigtPanel .contacts{width:220px; margin:16px 0 0 0; padding:0px; float:left ;font-family:Verdana;}
+#rigtPanel .contacts h2{width:200px; margin:0px; padding:0 0 3px 0; float:left; font-family:Verdana; font-size:20px; color:#000000; line-height:24px; font-weight:normal}
+/* #rigtPanel .contacts input{width:191px; height:17px; margin:7px 0 0 0; padding:3px 0 0 9px; float:left; font-family:Arial; font-size:10px; color:#363636; border:0px; background:#f3efc0}*/
+#rigtPanel .contacts  .inp{width:150px; height:17px; margin:7px 0 0 0; padding:3px 0 0 9px; float:left; font-family:Arial; font-size:10px; color:#363636; border:0px; background:#f3efc0}
+#rigtPanel .contacts textarea{width:150px; height:58px; margin:7px 0 0 0; padding:3px 0 0 9px; float:left; font-family:Arial; font-size:10px; color:#363636; border:0px; background:#f3efc0}
+#rigtPanel .contacts a{ height:16px; margin:10px 0 0 0; margin-left:5px; padding:0px; float:left; color:blue; font-family:Verdana; font-size:15px; text-decoration:none;}
+#rigtPanel .contacts a:hover{ height:16px; margin:10px 0 0 0; margin-left:5px; padding:0px; float:left; color:black; font-family:Verdana; font-size:15px; text-decoration:none;}
+#rigtPanel .error {width:200px; height:16px; margin:10px 0 0 0; margin-left:5px; padding:0px; float:left; font-family:Arial; font-size:12px;text-decoration:none; color:red;}
+
+/*
+#rigtPanel .contacts a{width:55px; height:16px; margin:10px 0 0 0; margin-left:5px; padding:0px; float:left; font-family:Arial; font-size:10px; color:#000000; line-height:14px; text-align:center; text-decoration:none; border:#bdbcbd solid 1px; background:#FFFFFF}
+#rigtPanel .contacts a:hover{background:#cccccc}
+*/
+#footWrap{width:100%; margin:0px; padding:0 0 26px 0; float:left}
+#footPanel{width:934px; margin:0 auto; padding:0px}
+#footNav{width:934px; margin:20px 0 0 0; padding:0px; float:left}
+#footNav ul{width:250px; margin:0 auto; padding:0px; display:block}
+#footNav ul li{width:auto; margin:0px; padding:0px; float:left; display:block}
+#footNav ul li .blank{width:auto; margin:3px 0 0 0; padding:0 10px 0 10px; float:left; font-family:Arial; font-size:12px; color:black; line-height:16px; font-weight:bold}
+#footNav ul li a{font-family:Arial; font-size:12px; color:black; line-height:16px; font-weight:bold; text-decoration:none; margin:0px; padding:0px}
+#footNav ul li a:hover{text-decoration:underline}
+#footPanel p{width:934px; margin:12px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:11px; color:#fffcd5; line-height:15px; font-weight:bold; text-align:center}
+#footPanel p a{color:black; text-decoration:none}
+#footPanel p a:hover{text-decoration:underline}
+#validation{width:934px; margin:10px 0 0 0; padding:0px; float:left}
+#validation ul{width:143px; margin:0 auto; padding:0px; display:block}
+#validation ul li{width:auto; margin:0px; padding:0px; float:left; display:block}
+#validation ul li .blank{width:7px; height:10px; margin:0px; padding:0px; float:left}
+#validation ul li a{width:64px; height:23px; margin:0px; padding:0 3px 0 0; float:left; font-family:Arial; font-size:11px; color:#100703; font-weight:bold; line-height:23px; text-align:center; text-decoration:none; background:url(images/validationBg.jpg) no-repeat}
+
+#slideshow {list-style:none; color:#fff}
+#slideshow span {display:none}
+#wrapper {width:506px; margin:25px auto;margin-left:75px; display:none;font:11px Verdana,Arial}
+#wrapper * {margin:0; padding:0}
+#fullsize {position:relative; width:500px; height:300px; padding:2px; border:1px solid #ccc; background:#000}
+#information {position:absolute; bottom:0; width:500px; height:0; background:#000; color:#fff; overflow:hidden; z-index:200; opacity:.7; filter:alpha(opacity=70)}
+#information h3 {padding:4px 8px 3px; font-size:14px;font:11px Verdana,Arial}
+#information p {padding:0 8px 8px}
+#image {width:500px}
+#image img {position:absolute; z-index:25; width:auto}
+.imgnav {position:absolute; width:25%; height:306px; cursor:pointer; z-index:150}
+#imgprev {left:0; background:url(images/left.gif) left center no-repeat}
+#imgnext {right:0; background:url(images/right.gif) right center no-repeat}
+#imglink {position:absolute; height:306px; width:100%; z-index:100; opacity:.4; filter:alpha(opacity=40)}
+.linkhover {background:url(images/link.gif) center center no-repeat}
+#thumbnails {margin-top:15px}
+#slideleft {float:left; width:20px; height:81px; background:url(images/scroll-left.gif) center center no-repeat; background-color:#222}
+#slideleft:hover {background-color:#333}
+#slideright {float:right; width:20px; height:81px; background:#222 url(images/scroll-right.gif) center center no-repeat}
+#slideright:hover {background-color:#333}
+#slidearea {float:left; position:relative; width:456px; margin-left:5px; height:81px; overflow:hidden}
+#slider {position:absolute; left:0; height:81px}
+#slider img {cursor:pointer; border:1px solid #666; padding:2px}
+
+
+.product_box
+{
+	display:block;
+	bottom: 3px;
+	left: 450px;
+	margin-bottom: 9px;
+	margin-left: 9px;
+	padding:15px;
+	background:#DDDDDD;
+	color:#333333;
+	z-index: 50;
+	font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+	opacity:0.8;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	
+}
+
+
+.button1
+{
+	background: #39F;
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	height:25px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 0;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+
+}
+
+.message_box
+{
+	display:block;
+	bottom: 3px;
+	left: 450px;
+	margin-bottom: 9px;
+	margin-left: 9px;
+	padding:15px;
+	background:#FFC;
+	color:#333333;
+	z-index: 50;
+	font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+	opacity:0.8;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	
+}
+
+.addproduct_box
+{
+	display:block;
+	bottom: 3px;
+	left: 590px;
+	margin-bottom: 9px;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding:15px;
+	background:#99F7A4;
+	color:#333333;
+	z-index: 50;
+	font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+	opacity:0.8;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	
+}

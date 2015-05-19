@@ -138,9 +138,12 @@ require("header.php");
 
 				<br/>
 			<label id="error" style="margin-left:15px;font-size:14px;color:red" ><?php
-						$error = $_REQUEST['err'];
-						if($error != NULL)
-						echo $error; ?></label>
+						if (!empty($_REQUEST['err'])) {
+							$error = $_REQUEST['err'];
+							if($error != NULL)
+							echo $error;	
+						}
+						 ?></label>
 		
 				</div>
 	

@@ -26,11 +26,14 @@
 					<br/>
 					<div class="error">
 					 <?php	
-						$err = $_REQUEST['err'];
-						if ($err)
-						{
-							echo("$err");
+						if (!empty($_REQUEST['err'])) {
+							$err = $_REQUEST['err'];
+							if ($err)
+							{
+								echo("$err");
+							}	
 						}
+						
 					?>	
 					</div>
 					

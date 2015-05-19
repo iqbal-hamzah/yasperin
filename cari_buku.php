@@ -107,7 +107,7 @@ require("header.php");
 		
 		
   		<?php
-			$name = $_POST["txtsearch"];
+			$name = (!empty($_POST["txtsearch"]) ? $_POST["txtsearch"] : '');
 				
 			$rs = mysql_query("select * from buku where Judul like '%".$name."%' or Sinopsis like '%".$name."%'");
 			if(mysql_num_rows($rs) != 0)

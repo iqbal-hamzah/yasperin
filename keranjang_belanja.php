@@ -98,7 +98,7 @@ require("header.php");
 	?>
 	<tr>
 		<td colspan="6" align="center">Belum ada buku yang dibeli</td>
-	</tr>
+	</tr>	
 	 </table>
 	<?php
 	}
@@ -107,9 +107,12 @@ require("header.php");
 
 	<br/><br/>
 	<label id="error" style="font-size:12px;color:red" ><?php
-						$error = $_REQUEST['err'];
-						if($error != NULL)
-						echo $error; ?></label>
+						if(!empty($_REQUEST['err'])){
+							$error = $_REQUEST['err'];
+							if($error != NULL)
+							echo $error; 	
+						}
+						?></label>
     <br/><br/>
 	<?php if($headerpemesanan) { ?>
 

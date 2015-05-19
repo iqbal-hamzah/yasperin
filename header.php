@@ -1,11 +1,17 @@
 <?php
 session_start();
 require("controller/conf.php");
+
+// inisailisasi variabel
+$nama = ''; $IdUser = ''; $IdPelanggan=""; $IdPengurus=""; $TipeAkses="";
+if (!empty($_SESSION)){
 $nama = $_SESSION["Nama"];
 $IdUser = $_SESSION["IdUser"];
 $IdPelanggan = $_SESSION["IdPelanggan"];
 $IdPengurus = $_SESSION["IdPengurus"];
-$TipeAkses = $_SESSION["TipeAkses"];
+$TipeAkses = $_SESSION["TipeAkses"];	
+}
+
 ?>
 
 

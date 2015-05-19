@@ -114,9 +114,12 @@ require("header.php");
 
 
 	<label id="error" style="margin-left:40px;font-size:14px;color:red" ><?php
-						$error = $_REQUEST['err'];
-						if($error != NULL)
-						echo $error; ?></label>
+						if (!empty($_REQUEST['err'])) {
+							$error = $_REQUEST['err'];
+							if($error != NULL)
+							echo $error; 	
+						}
+						?></label>
     <br/><br/>
 	<?php
 	if(mysql_num_rows($rs) != 0 )

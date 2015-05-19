@@ -97,79 +97,84 @@ require("header.php");
    
                 <div class="bottom">		
   		<?php
+		if (!empty($_GET['id'])) {
 			$idbuku = $_GET['id'];
-			$rs = mysql_query("select * from buku where IdBuku='$idbuku'");
-			
-			while($row = mysql_fetch_array($rs))
-			{
-			$Judul = $row["Judul"];
-		?>
-		<table border="0"  cellpadding="5px">
-			<tr>
-			<td>
-				<table border="0" class="buku_box">
-					<tr>
-						<td width="195" rowspan="4">
-						<a id="example4" href="images/buku/<?php echo $row['Sampul']; ?>" title="
-						<?php 
-				echo $Judul;
-				?>	
-						"><img alt="" height="190" width="195" src="images/buku/<?php echo $row['Sampul']; ?>" /></a>
-						
-						</td>
-						<td width="22" rowspan="3"></td><td width="518"><table border="0"> <tr><td width="480" height="30" style="color:blue"><strong><?php echo $Judul; ?></strong></td>
-						<td>
-					<?php						
-					if($TipeAkses == "Admin" || $TipeAkses == "Manager")
-						{
-					?>
-					<a href="ubah_buku.php?id=<?php echo $row[0]; ?>" ><img src="images/edit.png" width="15px" height="15px"/></a>
-					<?php
-						}
-					?>
-						</td>
-					</tr>
-				</table>
-			</td>
-			</tr>
-			<tr>
-				<td height="95">
-				<strong>Penulis : <?php echo $row['Penulis']; ?></strong><br/>
-			
-				<br/><strong>Harga : <?php echo rp($row['Harga'])."  "; ?></strong>
-				<?php
-				if($TipeAkses == "Pelanggan")
-				{
-				?>
-				<a style="text-decoration:none"  href="controller/doBeli.php?id=<?php echo $row[0]."&price=".$row[6]; ?>" ><input type="button" value="Pesan" /></a>
-				<?php
-				}
-				?>				
-				</td>
-			</tr>  
-			
+				$rs = mysql_query("select * from buku where IdBuku='$idbuku'");
 				
-			</table>
-			
-			</td>
-			</tr>
-			<tr>
-			<td>
-			Sinopsis : <br/>
-				<?php 
-			
-				echo $row['Sinopsis'];
-				?>
-			</td>
-			</tr>
-			
-			</table>
-			
-		<?php
-			}
-		?>
-		<br/><br/>
+				while($row = mysql_fetch_array($rs))
+				{
+				$Judul = $row["Judul"];
+			?>
+			<table border="0"  cellpadding="5px">
+				<tr>
+				<td>
+					<table border="0" class="buku_box">
+						<tr>
+							<td width="195" rowspan="4">
+							<a id="example4" href="images/buku/<?php echo $row['Sampul']; ?>" title="
+							<?php 
+					echo $Judul;
+					?>	
+							"><img alt="" height="190" width="195" src="images/buku/<?php echo $row['Sampul']; ?>" /></a>
+							
+							</td>
+							<td width="22" rowspan="3"></td><td width="518"><table border="0"> <tr><td width="480" height="30" style="color:blue"><strong><?php echo $Judul; ?></strong></td>
+							<td>
+						<?php						
+						if($TipeAkses == "Admin" || $TipeAkses == "Manager")
+							{
+						?>
+						<a href="ubah_buku.php?id=<?php echo $row[0]; ?>" ><img src="images/edit.png" width="15px" height="15px"/></a>
+						<?php
+							}
+						?>
+							</td>
+						</tr>
+					</table>
+				</td>
+				</tr>
+				<tr>
+					<td height="95">
+					<strong>Penulis : <?php echo $row['Penulis']; ?></strong><br/>
+				
+					<br/><strong>Harga : <?php echo rp($row['Harga'])."  "; ?></strong>
+					<?php
+					if($TipeAkses == "Pelanggan")
+					{
+					?>
+					<a style="text-decoration:none"  href="controller/doBeli.php?id=<?php echo $row[0]."&price=".$row[6]; ?>" ><input type="button" value="Pesan" /></a>
+					<?php
+					}
+					?>				
+					</td>
+				</tr>  
+				
+					
+				</table>
+				
+				</td>
+				</tr>
+				<tr>
+				<td>
+				Sinopsis : <br/>
+					<?php 
+				
+					echo $row['Sinopsis'];
+					?>
+				</td>
+				</tr>
+				
+				</table>
+				
+			<?php
+				}	
+			?>
+			<br/><br/>
  <a href="buku.php" style="text-decoration:none"><input type="button" value=" Kembali "/></a>	
+			<?php
+		}
+		?>
+		
 
   				</div>
   			</div>

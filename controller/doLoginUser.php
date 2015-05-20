@@ -20,7 +20,9 @@
 			$_SESSION["IdPelanggan"] = $row['IdPelanggan'];
 			$_SESSION["TipeAkses"] = "Pelanggan";
 			$_SESSION["Nama"] = $row["Nama"];
+			$_SESSION["IdPengurus"]	= false;
 			header("location:../index.php");
+				
 		}
 		else
 		{
@@ -31,6 +33,7 @@
 				{
 					$row2 = mysql_fetch_array($result2);
 					$_SESSION["IdPengurus"] = $row2["IdPengurus"];
+					$_SESSION["IdPelanggan"] = false;
 					$_SESSION["IdUser"] = $row2['IdPengurus'];
 					$_SESSION["TipeAkses"] = $row2["TipeAkses"];
 					$_SESSION["Nama"] = $row2["Nama"];

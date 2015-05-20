@@ -35,7 +35,16 @@
 	
 	mysql_query("insert into pelanggan(IdPelanggan,Sandi,Nama,JenisKelamin,Alamat,Kota,KodePos,Phone,Handphone,Email) values('$id','".md5($pass)."','$nama','$gender','$address','$city','$kodepos','$phone','$cell','$email')") or die("Insert GagaL");
 	
-	header("location:../registrasi.php?error=Registrasi Sukses");
+	// send email notif registrasi
+	require("doKirimNotifRegis.php");
+	$mail_msg = "ok";
+	if(!$mail->send()) {
+		$mail_msg = "Email fail to send";
+		echo 'Mailer Error: ' . $mail->ErrorInfo;
+		die();
+	}
+	
+	header("location:../registrasi.php?error=Registrasi Sukses&email=".$mail_msg);
 
 	}
 

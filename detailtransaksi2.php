@@ -31,6 +31,9 @@ if (!empty($_GET['idpemesanan'])) {
 		
 		$rs2 = mysql_query("select * from detailpemesanan where IdPemesanan='".$_GET['idpemesanan']."'");
 		$pengiriman = mysql_fetch_array(mysql_query("select * from pengiriman where IdPemesanan='".$_GET['idpemesanan']."'"));
+		
+		$i = 0;
+		$total = 0;
 		while($row = mysql_fetch_array($rs2))
 		{
 		$i++;

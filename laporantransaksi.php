@@ -93,12 +93,18 @@ require("header.php");
 </form>
 
 <?php
-	$tanggal1 = $_POST['txtdate'];
-	$tanggal2 = $_POST['txtdate2'];
-	$bulan1 = $_POST['txtmonth'];
-	$bulan2 = $_POST['txtmonth2'];
-	$tahun1 = $_POST['txtyear'];
-	$tahun2 = $_POST['txtyear2'];
+	// initial variable
+	$tanggal1 = $tanggal2 = $bulan1 = $bulan2 = $tahun1 = $tahun2 = "";
+
+	if (!empty($_POST)) {
+		$tanggal1 = $_POST['txtdate'];
+		$tanggal2 = $_POST['txtdate2'];
+		$bulan1 = $_POST['txtmonth'];
+		$bulan2 = $_POST['txtmonth2'];
+		$tahun1 = $_POST['txtyear'];
+		$tahun2 = $_POST['txtyear2'];	
+	}
+	
 	if($tanggal1 != "" && $tanggal2 != "" && $bulan1 != "" && $bulan2 != "" && $tahun1 != "" && $tahun2 != "")
 	{
 	$date1 = date("Y/m/d",strtotime("".$tahun1."/".$bulan1."/".$tanggal1));

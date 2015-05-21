@@ -21,7 +21,7 @@ require("header.php");
  while($row = mysql_fetch_array($rs))
  {
  
- $date = new DateTime($row["Date"]);
+ $date = new DateTime($row["TglPromo"]);
  $date2 = $date->format('d-F-y');
 	$id = $row[0];
  ?>

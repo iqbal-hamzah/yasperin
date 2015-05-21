@@ -69,9 +69,12 @@ require("header.php");
 					
 					<tr>
 						<td colspan="4" align="center"><label id="error" style="font-size:12px;color:red" ><?php
-						$error = $_REQUEST['error'];
-						if($error != NULL)
-						echo $error; ?></label></td>
+						if (!empty($_REQUEST["error"])) {
+							$error = $_REQUEST['error'];
+							if($error != NULL)
+							echo $error; 	
+						}
+						?></label></td>
 					</tr>
 				</table>
 				    
@@ -121,9 +124,12 @@ require("header.php");
 					
 					<tr>
 						<td colspan="4" align="center"><label id="error" style="font-size:12px;color:red" ><?php
-						$error2 = $_REQUEST['error2'];
-						if($error2 != NULL)
-						echo $error2; ?></label></td>
+						if (!empty($_REQUEST["error"])) {
+							$error = $_REQUEST['error'];
+							if($error != NULL)
+							echo $error; 	
+						}
+						?></label></td>
 					</tr>
 				</table>
 				    

@@ -36,13 +36,25 @@
 	mysql_query("insert into pelanggan(IdPelanggan,Sandi,Nama,JenisKelamin,Alamat,Kota,KodePos,Phone,Handphone,Email) values('$id','".md5($pass)."','$nama','$gender','$address','$city','$kodepos','$phone','$cell','$email')") or die("Insert GagaL");
 	
 	// send email notif registrasi
+	// panggil controller buat send email notif registrasi
+	// set subject email, to email dan html content email di controller ini
 	require("doKirimNotifRegis.php");
-	$mail_msg = "ok";
-	if(!$mail->send()) {
-		$mail_msg = "Email fail to send";
-		echo 'Mailer Error: ' . $mail->ErrorInfo;
-		die();
+
+	// object $email sudah di create jadi tinggal panggil saja
+	// send the message, check for errors
+	if (!$mail->send()) {
+		echo "Mailer Error: " . $mail->ErrorInfo;
+	} else {
+		echo "Message sent!";
 	}
+	die();
+	
+	// $mail_msg = "ok";
+	// if(!$mail->send()) {
+		// $mail_msg = "Email fail to send";
+		// echo 'Mailer Error: ' . $mail->ErrorInfo;
+		// die();
+	// }
 	
 	header("location:../registrasi.php?error=Registrasi Sukses&email=".$mail_msg);
 
